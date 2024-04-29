@@ -49,7 +49,7 @@ const Menu = () => {
             if (result.isConfirmed) {
                 try {
                     const response = await fetch(
-                        `https://ccsreservaton.online/api/foods/${foodID}`,
+                        `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/foods/${foodID}`,
                         {
                             method: "DELETE",
                         }
@@ -134,7 +134,7 @@ const Menu = () => {
         const fetchMenu = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/foods"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/foods"
                 );
                 const result = await response.json();
 
@@ -211,7 +211,7 @@ const Menu = () => {
             if (result.isConfirmed) {
                 try {
                     const response = await fetch(
-                        "https://ccsreservaton.online/api/foods",
+                        "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/foods",
                         {
                             method: "POST",
                             headers: {
@@ -270,7 +270,7 @@ const Menu = () => {
             if (result.isConfirmed) {
                 try {
                     const response = await fetch(
-                        `https://ccsreservaton.online/api/foods/${selectedFoodID}`,
+                        `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/foods/${selectedFoodID}`,
                         {
                             method: "PATCH",
                             headers: { "Content-Type": "application/json" },

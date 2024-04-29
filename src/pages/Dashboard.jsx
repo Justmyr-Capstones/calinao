@@ -55,7 +55,7 @@ const Dashboard = () => {
         const getStatus = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/status_count"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/status_count"
                 );
 
                 if (!response.ok) {
@@ -133,7 +133,7 @@ const Dashboard = () => {
         const getProfit = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/payment_amount"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/payment_amount"
                 );
 
                 if (!response.ok) {
@@ -159,7 +159,7 @@ const Dashboard = () => {
         const getClientCount = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/client_count"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/client_count"
                 );
 
                 if (!response.ok) {
@@ -183,7 +183,7 @@ const Dashboard = () => {
         const getReservationCount = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/reservation_count"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/reservation_count"
                 );
 
                 if (!response.ok) {
@@ -207,7 +207,7 @@ const Dashboard = () => {
         const getMenuCount = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/menu_count"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/menu_count"
                 );
 
                 if (!response.ok) {
@@ -231,7 +231,7 @@ const Dashboard = () => {
         const fetchMonthlyProfit = async (month) => {
             try {
                 const response = await fetch(
-                    `https://ccsreservaton.online/api/transaction_sum/${month}`
+                    `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/transaction_sum/${month}`
                 );
 
                 if (!response.ok) {

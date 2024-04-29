@@ -63,7 +63,7 @@ const Clients = () => {
         const getClients = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/clients"
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/clients"
                 );
                 const result = await response.json();
                 setClients(result);

@@ -57,7 +57,7 @@ const Transaction = () => {
     useEffect(() => {
         const getClients = async () => {
             const response = fetch(
-                "https://ccsreservaton.online/api/transactions"
+                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/transactions"
             );
             const data = await (await response).json();
             setTransactions(data);

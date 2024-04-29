@@ -29,7 +29,7 @@ const Login = () => {
 
         try {
             const response = await fetch(
-                "https://ccsreservaton.online/api/login",
+                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/login",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },

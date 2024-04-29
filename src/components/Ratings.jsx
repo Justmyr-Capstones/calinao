@@ -16,7 +16,7 @@ const Ratings = ({ clientData }) => {
     useEffect(() => {
         const getRatings = async () => {
             const response = await fetch(
-                `https://ccsreservaton.online/api/event_reservation_rating/${ID}`
+                `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/event_reservation_rating/${ID}`
             );
 
             const data = await response.json();
@@ -41,7 +41,7 @@ const Ratings = ({ clientData }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 const response = await fetch(
-                    `https://ccsreservaton.online/api/ratings/${rating_id}`,
+                    `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/ratings/${rating_id}`,
                     {
                         method: "DELETE",
                     }

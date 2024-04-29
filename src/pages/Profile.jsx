@@ -34,7 +34,7 @@ const Profile = () => {
         const fetchClientData = async () => {
             try {
                 const response = await fetch(
-                    "https://ccsreservaton.online/api/client/",
+                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/client/",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
