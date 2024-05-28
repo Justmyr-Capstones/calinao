@@ -41,7 +41,6 @@ function App() {
                 <Route path="/transactions" element={<Transaction />} />
                 {/* for /staff */}
                 <Route path="/staff" element={<Staff />} />
-                <Route path="/sample" element={<Samp />} />
             </Routes>
         </BrowserRouter>
     );
