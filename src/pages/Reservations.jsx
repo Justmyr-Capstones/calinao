@@ -27,7 +27,7 @@ const Reservations = () => {
     useEffect(() => {
         const getReservations = async () => {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/reservations"
+                "https://calinao-api-production.up.railway.app/api/reservations"
             );
             const result = await response.json();
             if (search !== "") {

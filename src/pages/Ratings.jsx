@@ -14,7 +14,7 @@ const Ratings = () => {
     useEffect(() => {
         const getRatings = async () => {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/ratings"
+                "https://calinao-api-production.up.railway.app/api/ratings"
             );
             const data = await response.json();
             if (data.length === null || data.length === 0) {

@@ -34,7 +34,7 @@ const Profile = () => {
         const fetchClientData = async () => {
             try {
                 const response = await fetch(
-                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/client/",
+                    "https://calinao-api-production.up.railway.app/api/client/",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },

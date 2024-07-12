@@ -28,7 +28,7 @@ const Reservation = () => {
                 //via post request
 
                 const response = await fetch(
-                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/client/",
+                    "https://calinao-api-production.up.railway.app/api/client/",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
@@ -185,7 +185,7 @@ const Reservation = () => {
     useEffect(() => {
         const fetchFoods = async () => {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/foods"
+                "https://calinao-api-production.up.railway.app/api/foods"
             );
             const data = await response.json();
             setFoods(data);
@@ -193,7 +193,7 @@ const Reservation = () => {
         const fetchCustomer = async () => {
             const client_id = customerID;
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/client",
+                "https://calinao-api-production.up.railway.app/api/client",
                 {
                     method: "POST",
                     headers: {
@@ -221,7 +221,7 @@ const Reservation = () => {
     useEffect(() => {
         const fetchFoodTypes = async () => {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/distinct/food_types"
+                "https://calinao-api-production.up.railway.app/api/distinct/food_types"
             );
             const data = await response.json();
             setFoodTypes(data);
@@ -251,7 +251,7 @@ const Reservation = () => {
             return acc;
         }, {});
         const reservationCount = await fetch(
-            "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/reservation_count",
+            "https://calinao-api-production.up.railway.app/api/reservation_count",
             {
                 method: "POST",
                 headers: {
@@ -301,7 +301,7 @@ const Reservation = () => {
                 };
 
                 const response = await fetch(
-                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/events",
+                    "https://calinao-api-production.up.railway.app/api/events",
                     {
                         method: "POST",
                         headers: {
@@ -326,7 +326,7 @@ const Reservation = () => {
                     };
 
                     const reservationResponse = await fetch(
-                        "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/reservation",
+                        "https://calinao-api-production.up.railway.app/api/reservation",
                         {
                             method: "POST",
                             headers: {
@@ -388,7 +388,7 @@ const Reservation = () => {
                                 };
 
                                 const addsOnResponse = await fetch(
-                                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/adds_on",
+                                    "https://calinao-api-production.up.railway.app/api/adds_on",
                                     {
                                         method: "POST",
                                         headers: {
@@ -420,7 +420,7 @@ const Reservation = () => {
                             };
 
                             const foodResponse = await fetch(
-                                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/reservation_food",
+                                "https://calinao-api-production.up.railway.app/api/reservation_food",
                                 {
                                     method: "POST",
                                     headers: {

@@ -32,7 +32,7 @@ const Staff = () => {
     const getStaff = async () => {
         try {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/staff"
+                "https://calinao-api-production.up.railway.app/api/staff"
             );
             const jsonData = await response.json();
 
@@ -71,7 +71,7 @@ const Staff = () => {
         e.preventDefault();
         try {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/staff",
+                "https://calinao-api-production.up.railway.app/api/staff",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },

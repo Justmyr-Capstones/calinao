@@ -54,7 +54,7 @@ const Profilee = ({ clientData, setReload }) => {
             if (result.isConfirmed) {
                 try {
                     const response = await fetch(
-                        `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/client/${clientData.client_id}`,
+                        `https://calinao-api-production.up.railway.app/api/client/${clientData.client_id}`,
                         {
                             method: "PATCH",
                             headers: {

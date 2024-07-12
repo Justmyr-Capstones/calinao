@@ -128,7 +128,7 @@ const Announcement = () => {
             if (result.isConfirmed) {
                 try {
                     const response = await fetch(
-                        `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/announcements/${selectedAnnouncement.announcement_id}`,
+                        `https://calinao-api-production.up.railway.app/api/announcements/${selectedAnnouncement.announcement_id}`,
                         {
                             method: "PATCH",
                             headers: { "Content-Type": "application/json" },
@@ -186,7 +186,7 @@ const Announcement = () => {
             // Check if the user clicked the "Confirm" button
             if (result.isConfirmed) {
                 const response = await fetch(
-                    `https://calinao-api-8e7b0352dcaf.herokuapp.com/api/announcements/${announcement_id}`,
+                    `https://calinao-api-production.up.railway.app/api/announcements/${announcement_id}`,
                     {
                         method: "DELETE",
                     }
@@ -199,7 +199,7 @@ const Announcement = () => {
     useEffect(() => {
         const getClients = async () => {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/clients"
+                "https://calinao-api-production.up.railway.app/api/clients"
             );
             const data = await response.json();
             setClients(data);
@@ -210,7 +210,7 @@ const Announcement = () => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(
-                "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/announcements"
+                "https://calinao-api-production.up.railway.app/api/announcements"
             );
             const data = await response.json();
             return data;
@@ -304,7 +304,7 @@ const Announcement = () => {
         const insertAnnouncement = async () => {
             try {
                 const response = await fetch(
-                    "https://calinao-api-8e7b0352dcaf.herokuapp.com/api/announcements",
+                    "https://calinao-api-production.up.railway.app/api/announcements",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
